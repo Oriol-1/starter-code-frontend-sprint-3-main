@@ -1,0 +1,89 @@
+
+Inicio
+|
+|___ Declaración de variables (products, cartList, cart, total)
+|
+|___ Función buy(id)
+|        |
+|        |___ Buscar producto en products y añadir a cartList
+|        |___ Generar carrito (generateCart)
+|        |   |
+|        |   |___ Iterar sobre cartList y crear objeto productsAux con productos no repetidos y cantidades
+|        |   |___ Asignar a cart el valor de los valores de productsAux
+|        |   |___ Llamar a calculateTotal
+|        |
+|        |___ Imprimir carrito (printCart)
+|
+|___ Función cleanCart
+|        |
+|        |___ Vaciar cartList
+|        |___ Asignar a cart el valor de cartList
+|        |___ Imprimir carrito (printCart)
+|        |___ Establecer valor de elementos HTML "total_price" y "count_product" a 0
+|
+|___ Función calculateTotal
+|        |
+|        |___ Iterar sobre cartList y sumar precios
+|
+|___ Función generateCart
+|        |
+|        |___ Iterar sobre cartList y crear objeto productsAux con productos no repetidos y cantidades
+|        |___ Asignar a cart el valor de los valores de productsAux
+|        |___ Llamar a calculateTotal
+|
+|___ Función applyPromotionsCart
+|        |
+|        |___ Iterar sobre cart y aplicar promociones a cada producto
+|
+|___ Función printCart
+|        |
+|        |___ Mostrar contenido del carrito y total en elemento HTML "cart_list"
+|
+|___ Fin
+
+
+                      +------------+
+                      |  function  |
+                      |  buy(id)   |
+                      +------------+
+                                |
+                                |  Recoge información de la array "products" y el parámetro "id"
+                                |  Añade información al array "cartList"
+                                |
+                                |
+                      +------------+
+                      |  function  |
+                      | generateCart() |
+                      +------------+
+                                |
+                                |  Convierte el array "cartList" en el array "cart"
+                                |  (sin elementos repetidos, muestra cantidad de cada producto)
+                                |
+                                |
+                      +------------+
+                      |  function  |
+                      | calculateTotal() |
+                      +------------+
+                                |
+                                |  Calcula el precio total del carrito
+                                |
+                                |
+                      +------------+
+                      |  function  |
+                      |  printCart()  |
+                      +------------+
+                                |
+                                |  Muestra el contenido del carrito y el precio total
+                                |  en el elemento HTML con id "cart_list"
+                                |
+                                |
+                      +------------+
+                      |            |
+                      |   HTML     |
+                      |            |
+                      +------------+
+                                |
+                                |  Muestra el contenido del carrito y el precio total
+                                |  en la página web
+                                |
+
