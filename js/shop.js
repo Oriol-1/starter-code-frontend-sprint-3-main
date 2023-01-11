@@ -27,7 +27,7 @@ function buy(id) {
     // .push metodo permite agregar uno o mas elementos al final de una array
   
     // Imprime el valor de `productos` en la consola
-    console.log(productos);
+    // console.log(productos);
 
     generateCart();
   
@@ -53,7 +53,7 @@ function cleanCart() {
     document.getElementById("count_product").innerHTML = 0;
     
     // Imprime el valor de `cartList` en la consola
-    console.log(cartList);
+    // console.log(cartList);
   }
 
 // Exercise 3
@@ -62,7 +62,7 @@ function calculateTotal() {
     total = cartList.reduce((acc, recorre) => acc + recorre.price, 0);
 
  
-    console.log(total);
+    // console.log(total);
 
     // Establece el contenido del elemento con id "total_price" al valor de "total"
     document.getElementById("total_price").innerHTML = total;
@@ -99,13 +99,13 @@ function generateCart() {
     cart = Object.values(productsAux);
   
 
-    console.log(cart);
+    // console.log(cart);
     
  
     calculateTotal();
     
  
-    applyPromotionsCart();
+  
   }
   
 
@@ -194,7 +194,7 @@ function addToCart(id) {
     cart = Object.values(productsAux);
      //  recojo los values del objeto y los almaceno en el array cart[]
     cart.push(productos);
-    console.log(cart);
+    // console.log(cart);
     calculateTotal();
     printCart();
   }
