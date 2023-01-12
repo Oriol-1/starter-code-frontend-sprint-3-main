@@ -126,7 +126,14 @@ function applyPromotionsCart() {
         cart[i].price = cart[i].price * cart[i].quantity * (2 / 3);
         console.log("Importe total: " + cart[i].price.toFixed(2));
       }
+       // el objeto del carrito tenga la propiedad subtotalWithDiscount
+      else {
+        cart[i].subtotalWithDiscount = cart[i].price * cart[i].quantity;
+        console.log("Importe total: " + cart[i].subtotalWithDiscount);
+      }
+
     }
+    
   }
 
   function printCart() {
